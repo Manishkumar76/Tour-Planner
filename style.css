@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background:linear-gradient(white,blue,white);
+     */
+     background: 
+}
+header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+.heading1{
+    margin: 20px;
+    padding: 10px;
+    border: 5px groove  ;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 20px;
+      box-shadow: 2px -2px 0px gray ;
+    color:black;
+    font-weight: 900;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container{
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.place_card{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 380px;
+    /* border: 1px solid black; */
+    border-radius:10px ;
+    box-shadow: 2px 2px 1px 2px gray;
+    background: antiquewhite;
+    
+}
+
+.place_card .img{
+    align-self: center; 
+    margin-top: 5px;
+   
+    height: 300px;
+    width: 375px;
+  
+   
+}
+.place_card{
+    margin: 20px;
+}
+
+.place_card:hover img{
+    /* z-index: 9; */
+    /* background-color: antiquewhite; */
+    /* width: 374px; */
+    /* transform:scale(1.009); */
+    animation: mymove 3s infinite ease-in-out;
+   
+}
+
+@keyframes mymove {
+    0% {box-shadow: 2px 0px 1px 1px;  }
+    50% {box-shadow: -2px 2px 1px 1px;}
+    100%{box-shadow: -2px -2px 1px 1px;}
+    0%{
+        box-shadow: 2px -2px 1px 1px;
+    }
+  }
+
+
+.img img{
+    align-self: center;
+    height: 300px;
+    width: 375px;
+    border-radius:10px ;
+    /* transform-origin: center; */
+    /* transition: ease-in-out 0.2s; */
+}
+.place{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.price{
+    color:rgb(128, 185, 44);
+    font-weight: 900;
+    font-size: large; 
+}
+.place h3{
+   font-weight: 900;
+   padding-top:2px ;
+}
+.more p{
+    font-size: 100%;
+    font-weight: 700;
+    color: aqua;
+
+}
+a{
+    text-decoration: none;
+}
+span{
+    display: inline;
+}
+#remove{
+    align-self: center;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(231, 209, 176);
+    border-radius: 10px;
+
+
+}
